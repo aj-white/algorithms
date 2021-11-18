@@ -1,7 +1,7 @@
-from typing import List, Union
+from typing import List, Optional, Union
 
 
-def linear_search(items: List, target: Union[int, str]) -> int:
+def linear_search(items: List, target: Union[int, str]) -> Optional[int]:
     """Returns the index position of the target if found, else None"""
     for index, value in enumerate(items):
         if items[index] == target:
